@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Copyright 2009 Facebook
+# Copyright 2011 
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may
 # not use this file except in compliance with the License. You may obtain
@@ -49,10 +49,22 @@ class msg_subscriber ( object ) :
         pass
 
 class feed_consumer ( object ) :
+    """
+    Is both a subscriber and a requester,
+    as the user may want to request old or
+    missed data in addition to subscribing to
+    a live feed.
+    """
     def __init__() :
         pass
 
 class feed_producer ( object ) :
+    """
+    Is both a publisher and a responder,
+    as consumers will want to subscribe and
+    optionally request missed or old parts 
+    of the feed
+    """
     def __init__() :
         pass
 
